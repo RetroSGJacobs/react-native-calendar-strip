@@ -201,7 +201,7 @@ class CalendarDay extends Component {
         >
           {this.props.showDayName && (
             <Text
-              style={[dateNameStyle, { fontSize: this.state.dateNameFontSize }]}
+              style={[{ fontSize: this.state.dateNameFontSize }, dateNameStyle]}
               allowFontScaling={this.props.allowDayTextScaling}
             >
               {this.props.date.format("ddd").toUpperCase()}
@@ -210,8 +210,7 @@ class CalendarDay extends Component {
           {this.props.showDayNumber && (
             <Text
               style={[
-                dateNumberStyle,
-                { fontSize: this.state.dateNumberFontSize }
+                  { fontSize: this.state.dateNumberFontSize }, dateNumberStyle
               ]}
               allowFontScaling={this.props.allowDayTextScaling}
             >
