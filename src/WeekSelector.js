@@ -97,7 +97,7 @@ class WeekSelector extends Component {
 
     return (
       <TouchableOpacity
-        style={[styles.iconContainer, iconContainerStyle]}
+        style={[styles.iconContainer, iconContainerStyle, {height: 50, width: 30}]}
         onPress={onPress}
         disabled={!enabled}
       >
